@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: $prim-background;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.container {
+  width: 1114px;
+  margin: 0 auto;
+}
+.linkHover {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: $black;
+    height: 2px;
+    transition: $standart-transition;
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+}

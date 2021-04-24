@@ -1,0 +1,9 @@
+$prim-background: #0f111a;
+$black: #272525;
+$standart-transition: all .3s ease;
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
